@@ -12,10 +12,21 @@
 		EED5A4382CC2553400D91781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED5A4312CC2553400D91781 /* Main.storyboard */; };
 		EED5A4392CC2553400D91781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5A42B2CC2553400D91781 /* AppDelegate.swift */; };
 		EED5A43A2CC2553400D91781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5A4322CC2553400D91781 /* SceneDelegate.swift */; };
-		EED5A43B2CC2553400D91781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5A4332CC2553400D91781 /* ViewController.swift */; };
+		EED5A43B2CC2553400D91781 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED5A4332CC2553400D91781 /* QuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE782E382CC353B300311B08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED5A40B2CC2552C00D91781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EED5A4122CC2552C00D91781;
+			remoteInfo = "mvvm-combine-demo";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EE782E342CC353B300311B08 /* mvvm-combine-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvvm-combine-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED5A4132CC2552C00D91781 /* mvvm-combine-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvvm-combine-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED5A42B2CC2553400D91781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED5A42C2CC2553400D91781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,10 +34,25 @@
 		EED5A42E2CC2553400D91781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED5A4302CC2553400D91781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED5A4322CC2553400D91781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EED5A4332CC2553400D91781 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED5A4332CC2553400D91781 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EE782E352CC353B300311B08 /* mvvm-combine-demoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "mvvm-combine-demoTests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		EE782E312CC353B300311B08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EED5A4102CC2552C00D91781 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				EED5A4342CC2553400D91781 /* mvvm-combine-demo */,
+				EE782E352CC353B300311B08 /* mvvm-combine-demoTests */,
 				EED5A4142CC2552C00D91781 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				EED5A4132CC2552C00D91781 /* mvvm-combine-demo.app */,
+				EE782E342CC353B300311B08 /* mvvm-combine-demoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +90,7 @@
 				EED5A42F2CC2553400D91781 /* LaunchScreen.storyboard */,
 				EED5A4312CC2553400D91781 /* Main.storyboard */,
 				EED5A4322CC2553400D91781 /* SceneDelegate.swift */,
-				EED5A4332CC2553400D91781 /* ViewController.swift */,
+				EED5A4332CC2553400D91781 /* QuoteViewController.swift */,
 			);
 			path = "mvvm-combine-demo";
 			sourceTree = "<group>";
@@ -70,6 +98,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EE782E332CC353B300311B08 /* mvvm-combine-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE782E3C2CC353B300311B08 /* Build configuration list for PBXNativeTarget "mvvm-combine-demoTests" */;
+			buildPhases = (
+				EE782E302CC353B300311B08 /* Sources */,
+				EE782E312CC353B300311B08 /* Frameworks */,
+				EE782E322CC353B300311B08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE782E392CC353B300311B08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EE782E352CC353B300311B08 /* mvvm-combine-demoTests */,
+			);
+			name = "mvvm-combine-demoTests";
+			packageProductDependencies = (
+			);
+			productName = "mvvm-combine-demoTests";
+			productReference = EE782E342CC353B300311B08 /* mvvm-combine-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EED5A4122CC2552C00D91781 /* mvvm-combine-demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED5A4262CC2552E00D91781 /* Build configuration list for PBXNativeTarget "mvvm-combine-demo" */;
@@ -99,6 +150,10 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					EE782E332CC353B300311B08 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = EED5A4122CC2552C00D91781;
+					};
 					EED5A4122CC2552C00D91781 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -119,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				EED5A4122CC2552C00D91781 /* mvvm-combine-demo */,
+				EE782E332CC353B300311B08 /* mvvm-combine-demoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EE782E322CC353B300311B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EED5A4112CC2552C00D91781 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,17 +200,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE782E302CC353B300311B08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EED5A40F2CC2552C00D91781 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EED5A4392CC2553400D91781 /* AppDelegate.swift in Sources */,
 				EED5A43A2CC2553400D91781 /* SceneDelegate.swift in Sources */,
-				EED5A43B2CC2553400D91781 /* ViewController.swift in Sources */,
+				EED5A43B2CC2553400D91781 /* QuoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE782E392CC353B300311B08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EED5A4122CC2552C00D91781 /* mvvm-combine-demo */;
+			targetProxy = EE782E382CC353B300311B08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EED5A42F2CC2553400D91781 /* LaunchScreen.storyboard */ = {
@@ -169,6 +247,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EE782E3A2CC353B300311B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jackie.mvvm-combine-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-combine-demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mvvm-combine-demo";
+			};
+			name = Debug;
+		};
+		EE782E3B2CC353B300311B08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53JP7T2TYF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jackie.mvvm-combine-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvvm-combine-demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mvvm-combine-demo";
+			};
+			name = Release;
+		};
 		EED5A4272CC2552E00D91781 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,6 +461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE782E3C2CC353B300311B08 /* Build configuration list for PBXNativeTarget "mvvm-combine-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE782E3A2CC353B300311B08 /* Debug */,
+				EE782E3B2CC353B300311B08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EED5A40E2CC2552C00D91781 /* Build configuration list for PBXProject "mvvm-combine-demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
